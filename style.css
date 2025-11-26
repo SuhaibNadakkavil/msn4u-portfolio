@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.project-filter {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.dark .project-filter {
+    background: #1a1a1a;
+    border-color: #444;
+    color: #fafafa;
+}
+
+.project-filter:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.active-filter {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: white !important;
+}
+
+.modal-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+.modal-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.badge-skill {
+    font-size: 12px;
+    padding: 4px 10px;
+    background: #eef2ff;
+    color: #4f46e5;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.dark .badge-skill {
+    background: #312e81;
+    color: #c7d2fe;
+}

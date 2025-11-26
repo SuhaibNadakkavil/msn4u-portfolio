@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Mohamed Suhaib Nadakkavil (msn4u), a front-end developer and freelancer specializing in HTML, CSS, Bootstrap, Tailwind CSS, and modern UI development." />
+  <meta name="keywords"
+    content="msn4u, Mohamed Suhaib Nadakkavil, front-end developer, freelancer, HTML developer, Tailwind CSS developer, portfolio website, responsive UI, web designer Kerala" />
+  <meta name="author" content="Mohamed Suhaib Nadakkavil" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://your-portfolio-link.com" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="msn4u | Front-end Developer Portfolio" />
+  <meta property="og:description"
+    content="Front-end Developer focused on clean UI, responsive design, and modern web development." />
+  <meta property="og:image" content="img/portfolio-preview.png" />
+  <meta property="og:url" content="https://your-portfolio-link.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="msn4u | Front-end Developer Portfolio" />
+  <meta name="twitter:description" content="Clean, modern, responsive portfolio built using HTML + Tailwind CSS." />
+  <meta name="twitter:image" content="img/portfolio-preview.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/hero.png" />
+  <link rel="apple-touch-icon" href="img/hero.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <!-- Custom JS -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <header class="w-full fixed top-0 left-0 z-50 bg-lightbg dark:bg-darkbg/90 backdrop-blur-lg shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Brand -->
+        <a href="#" class="text-xl font-bold font-inter text-lightfg dark:text-darkfg tracking-wide transition-transform hover:-translate-y-1">
+          msn4u
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8 text-lightfg dark:text-darkfg font-medium">
+          <a href="#home" class="hover:text-blue-600 transition transform hover:-translate-y-1">Home</a>
+          <a href="#about" class="hover:text-blue-600 transition transform hover:-translate-y-1">About</a>
+          <a href="#education" class="hover:text-blue-600 transition transform hover:-translate-y-1">Education</a>
+          <a href="#skills" class="hover:text-blue-600 transition transform hover:-translate-y-1">Skills</a>
+          <a href="#projects" class="hover:text-blue-600 transition transform hover:-translate-y-1">Projects</a>
+          <a href="#services" class="hover:text-blue-600 transition transform hover:-translate-y-1">Services</a>
+          <a href="#contact" class="hover:text-blue-600 transition transform hover:-translate-y-1">Contact</a>
+        </nav>
+
+        <!-- Right Utilities -->
+        <div class="flex items-center gap-4">
+
+          <!-- Dark Mode Toggle -->
+          <button id="themeToggle"
+            class="p-2 rounded-lg border border-gray-300 dark:border-gray-700 text-lightfg dark:text-darkfg hover:bg-gray-100 dark:hover:bg-gray-800 transition transform hover:-translate-y-1">
+            <svg id="sunIcon" class="h-5 w-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364l-1.414-1.414M7.05 7.05L5.636 5.636m12.728 0l-1.414 1.414M7.05 16.95l-1.414 1.414" />
+            </svg>
+            <svg id="moonIcon" class="h-5 w-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                d="M21 12.79A9 9 0 0111.21 3c0-.37-.43-.59-.71-.35a9 9 0 108.85 15.09c.28-.23.06-.66-.35-.66z" />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-lightfg dark:text-darkfg transition-transform hover:-translate-y-1">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav id="mobileMenu" class="hidden flex-col space-y-4 py-4 text-lightfg dark:text-darkfg font-medium md:hidden">
+        <a href="#home" class="hover:text-blue-600 transition transform hover:-translate-y-1">Home</a>
+        <a href="#about" class="hover:text-blue-600 transition transform hover:-translate-y-1">About</a>
+        <a href="#education" class="hover:text-blue-600 transition transform hover:-translate-y-1">Education</a>
+        <a href="#skills" class="hover:text-blue-600 transition transform hover:-translate-y-1">Skills</a>
+        <a href="#projects" class="hover:text-blue-600 transition transform hover:-translate-y-1">Projects</a>
+        <a href="#services" class="hover:text-blue-600 transition transform hover:-translate-y-1">Services</a>
+        <a href="#contact" class="hover:text-blue-600 transition transform hover:-translate-y-1">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-20 bg-lightbg dark:bg-darkbg">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Content -->
+      <div class="space-y-6 animate-fadeInUp">
+        <!-- Small heading -->
+        <h2 class="text-base font-medium text-blue-600 dark:text-blue-400 tracking-wide">
+          Hello, I'm
+        </h2>
+
+        <!-- Full Name -->
+        <h1 class="text-4xl md:text-5xl font-bold font-inter text-lightfg dark:text-darkfg leading-tight">
+          Mohamed Suhaib <br />
+          Nadakkavil
+        </h1>
+
+        <!-- Typing Animation -->
+        <h2 class="text-xl md:text-2xl font-medium text-gray-600 dark:text-gray-300">
+          I'm a
+          <span id="typingText" class="text-blue-600 dark:text-blue-400 font-semibold"></span>
+        </h2>
+
+        <!-- Short description -->
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed max-w-md">
+          A front-end focused developer specializing in creating clean, modern, responsive, and user-centric web
+          interfaces using HTML, CSS, Tailwind CSS, and JavaScript-based frameworks.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex items-center gap-4">
+          <a href="#projects"
+            class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition transform hover:-translate-y-1">
+            View Projects
+          </a>
+
+          <a href="#contact"
+            class="px-6 py-3 border border-gray-300 dark:border-gray-600 text-lightfg dark:text-darkfg rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition transform hover:-translate-y-1">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex justify-center animate-fadeInUp delay-200">
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl">
+          <img src="img/hero.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Image (Left) -->
+      <div class="flex justify-center animate-fadeInUp">
+        <div
+          class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+          <img src="img/about.png" alt="About Image" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <!-- Content (Right) -->
+      <div class="space-y-6 animate-fadeInUp delay-200">
+
+        <!-- Section Title -->
+        <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+          About Me
+        </h2>
+
+        <!-- Main Paragraph -->
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+          I’m <span class="font-semibold text-lightfg dark:text-darkfg">Mohamed Suhaib Nadakkavil</span>, a front-end
+          developer focused on building clean, modern, and fully responsive user interfaces.
+          I specialize in crafting lightweight, optimized, and pixel-perfect websites using HTML, CSS, Bootstrap,
+          Tailwind CSS, and JavaScript essentials.
+        </p>
+
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+          I’ve also completed projects with Node.js, Express.js, and MongoDB for backend functionality, but my primary
+          passion remains crafting intuitive UI experiences for clients, freelancers, startups, small businesses, and
+          personal brands.
+        </p>
+
+        <!-- Why Hire Me -->
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-lightfg dark:text-darkfg">Why Hire Me?</h3>
+
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300 text-base">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 dark:text-blue-400 mt-1">•</span> Clean, modern, responsive UI development
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 dark:text-blue-400 mt-1">•</span> Tailwind CSS expert for fast and scalable
+              design
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 dark:text-blue-400 mt-1">•</span> SEO-friendly and performance optimized coding
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 dark:text-blue-400 mt-1">•</span> Great communication and client-focused
+              workflow
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 gap-6 pt-2">
+          <div>
+            <h4 class="text-3xl font-bold text-lightfg dark:text-darkfg">30+</h4>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">Completed UI Components</p>
+          </div>
+          <div>
+            <h4 class="text-3xl font-bold text-lightfg dark:text-darkfg">10+</h4>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">Freelance Project Samples</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: Timeline Content -->
+      <div class="space-y-6 animate-fadeInUp">
+
+        <!-- Section Title -->
+        <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+          Education
+        </h2>
+
+        <!-- Intro / Short -->
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl">
+          My formal and ongoing education focused on software engineering and computer science fundamentals, plus
+          earlier studies in biology that gave me strong analytical skills.
+        </p>
+
+        <!-- Timeline -->
+        <div class="relative pl-8">
+          <!-- Vertical line -->
+          <div class="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-700"></div>
+
+          <!-- Item 1: Current (Software Engineer) -->
+          <div class="mb-10 relative">
+            <div class="absolute left-0 top-1">
+              <span class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white">•</span>
+            </div>
+            <div class="ml-8">
+              <div class="flex items-center gap-3">
+                <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg">Software Engineer</h3>
+                <span
+                  class="text-sm text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-0.5 rounded-full">Current</span>
+              </div>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Brototype</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">2025 - Present</p>
+              <p class="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed max-w-xl">
+                Ongoing practical training and hands-on front-end & full-stack exposure with a focus on modern UI,
+                Tailwind workflows, and project-based engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: BSc Computer Science -->
+          <div class="mb-10 relative">
+            <div class="absolute left-0 top-1">
+              <span
+                class="flex items-center justify-center h-6 w-6 rounded-full bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400">•</span>
+            </div>
+            <div class="ml-8">
+              <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg">Bsc. Computer Science</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">University of Calicut</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">2022 - 2023</p>
+              <p class="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed max-w-xl">
+                Coursework in core computer science topics, problem solving, and software fundamentals that underpin
+                modern front-end development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Biology (Higher Secondary) -->
+          <div class="relative">
+            <div class="absolute left-0 top-1">
+              <span
+                class="flex items-center justify-center h-6 w-6 rounded-full bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400">•</span>
+            </div>
+            <div class="ml-8">
+              <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg">Biology Science</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Higher Secondary</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">2020 - 2022</p>
+              <p class="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed max-w-xl">
+                Foundation studies that improved analytical thinking and disciplined study habits valuable for
+                systematic development work.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right: Illustration / Image -->
+      <div class="flex justify-center animate-fadeInUp delay-200">
+        <div class="w-full max-w-sm rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+          <img src="img/ed.jpg" alt="Education Image" class="w-full h-64 object-cover">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+      <!-- Section Title -->
+      <div class="text-center space-y-4 mb-12 animate-fadeInUp">
+        <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+          Skills
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Front-end focused with practical backend exposure.
+          Strong foundation in building responsive UI and exploring modern JavaScript ecosystems.
+        </p>
+      </div>
+
+      <!-- Skilled In -->
+      <div class="space-y-6 animate-fadeInUp">
+        <h3 class="text-xl font-medium text-lightfg dark:text-darkfg">
+          Skilled In
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+          <!-- Skill Card -->
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">HTML</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">CSS</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">Bootstrap</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">Tailwind CSS</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">Node.js</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">Express.js</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">MongoDB</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition text-center border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-lightfg dark:text-darkfg">MVC Architecture</h4>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Learning / Exploring -->
+      <div class="space-y-6 mt-16 animate-fadeInUp delay-200">
+        <h3 class="text-xl font-medium text-lightfg dark:text-darkfg">
+          Learning & Exploring
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+          <div
+            class="p-6 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-center shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-blue-700 dark:text-blue-300">React</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-center shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-blue-700 dark:text-blue-300">TypeScript</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-center shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-blue-700 dark:text-blue-300">Next.js</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-center shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-blue-700 dark:text-blue-300">Nest.js</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-center shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-blue-700 dark:text-blue-300">Three.js</h4>
+          </div>
+
+          <div
+            class="p-6 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-center shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <h4 class="text-lg font-medium text-blue-700 dark:text-blue-300">GSAP</h4>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+      <!-- Section Title -->
+      <div class="text-center space-y-4 mb-12 animate-fadeInUp">
+        <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+          Projects
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          A curated collection of my front-end and backend projects.
+          Filter by category and explore project details instantly via modal.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12 animate-fadeInUp delay-200">
+        <button class="project-filter active-filter transition-transform hover:-translate-y-1" data-filter="all">All</button>
+        <button class="project-filter transition-transform hover:-translate-y-1" data-filter="htmlcss">HTML + CSS</button>
+        <button class="project-filter transition-transform hover:-translate-y-1" data-filter="bootstrap">Bootstrap</button>
+        <button class="project-filter transition-transform hover:-translate-y-1" data-filter="tailwind">Tailwind</button>
+        <button class="project-filter transition-transform hover:-translate-y-1" data-filter="backend">Backend</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <!-- PROJECT 10 -->
+        <div class="project-item group tailwind cursor-pointer transition-transform hover:-translate-y-1" data-project="project10">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/business-landing-page.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Business Landing Page</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 11 -->
+        <div class="project-item group tailwind cursor-pointer transition-transform hover:-translate-y-1" data-project="project11">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/product-landing-page.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Product Landing Page</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 9 -->
+        <div class="project-item group bootstrap cursor-pointer transition-transform hover:-translate-y-1" data-project="project9">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/multipage-bootstrap-digital-agency.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Multi Page Digital Agency</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 12 -->
+        <div class="project-item group tailwind cursor-pointer transition-transform hover:-translate-y-1" data-project="project12">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/js-mini-projects.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">JS Mini Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <div class="project-item group htmlcss cursor-pointer transition-transform hover:-translate-y-1" data-project="project1">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/hc-portfolio.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Sample Portfolio</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 14 -->
+        <div class="project-item group backend cursor-pointer transition-transform hover:-translate-y-1" data-project="project14">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/user-management.png" class="h-full w-full object-cover">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">User Management</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 15 -->
+        <div class="project-item group backend cursor-pointer transition-transform hover:-translate-y-1" data-project="project15">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/user-login.png" class="h-full w-full object-cover">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">User Login</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 13 -->
+        <div class="project-item group backend cursor-pointer transition-transform hover:-translate-y-1" data-project="project13">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img class="h-full w-full object-cover bg-darkbg dark:bg-lightbg">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Contacts API</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 8 -->
+        <div class="project-item group bootstrap cursor-pointer transition-transform hover:-translate-y-1" data-project="project8">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/bootstrap-portfolio.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Sample Portfolio</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 7 -->
+        <div class="project-item group bootstrap cursor-pointer transition-transform hover:-translate-y-1" data-project="project7">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/paper-grid.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Paper Grid Home Page UI Clone</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-item group htmlcss cursor-pointer transition-transform hover:-translate-y-1" data-project="project4">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/7up.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">7up Home Page UI Clone</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-item group htmlcss cursor-pointer transition-transform hover:-translate-y-1" data-project="project5">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/appy-fizz.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Appy Fizz Home Page UI Clone</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-item group bootstrap cursor-pointer transition-transform hover:-translate-y-1" data-project="project6">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/sample-pw.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Sample Personal Portfolio</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-item group htmlcss cursor-pointer transition-transform hover:-translate-y-1" data-project="project2">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/calculator.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Calculator</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-item group htmlcss cursor-pointer transition-transform hover:-translate-y-1" data-project="project3">
+          <div class="relative h-56 rounded-xl overflow-hidden shadow-md bg-gray-200 dark:bg-gray-700">
+            <img src="img/fb-old-login.png" class="h-full w-full object-cover" alt="">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <p class="text-white text-lg font-medium">Facebook Old Login Page UI Clone</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow / How I Work -->
+<section id="workflow" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+    <!-- Title -->
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+        How I Work
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        A simple, clear and client-friendly workflow to ensure fast delivery and great results.
+      </p>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Step 1 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <div class="text-3xl mb-4">📝</div>
+        <h3 class="text-xl font-semibold mb-2 text-lightfg dark:text-darkfg">1. Requirements</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          I understand what you need (content, layout, reference designs).
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <div class="text-3xl mb-4">🎨</div>
+        <h3 class="text-xl font-semibold mb-2 text-lightfg dark:text-darkfg">2. Structure & UI</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          I plan the layout and create clean UI with HTML, CSS, Bootstrap, Tailwind.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <div class="text-3xl mb-4">⚙️</div>
+        <h3 class="text-xl font-semibold mb-2 text-lightfg dark:text-darkfg">3. Development</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          I build, test responsiveness, and ensure clean and optimized code.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <div class="text-3xl mb-4">🚀</div>
+        <h3 class="text-xl font-semibold mb-2 text-lightfg dark:text-darkfg">4. Delivery</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          I deliver final files, host if needed, and provide support for revisions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+<section id="services" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+    <!-- Section Title -->
+    <div class="text-center space-y-4 mb-12 animate-fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+        Services
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Front-end development services crafted to help clients build clean, responsive, and modern web interfaces.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Service Card 1 -->
+      <div class="service-card group p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1">
+        <div class="flex items-center justify-center mb-5">
+          <div class="h-14 w-14 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+            <span class="text-blue-600 dark:text-blue-300 text-3xl">💻</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg mb-2">HTML Website Development</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          Clean, semantic, and responsive HTML websites built with modern layout techniques.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="badge-skill">HTML</span>
+          <span class="badge-skill">CSS</span>
+        </div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card group relative p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1">
+        
+        <!-- Highlight Badge -->
+        <span class="absolute top-4 right-4 px-3 py-1 text-xs rounded-full bg-blue-600 text-white">
+          Popular
+        </span>
+
+        <div class="flex items-center justify-center mb-5">
+          <div class="h-14 w-14 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+            <span class="text-green-600 dark:text-green-300 text-3xl">🎨</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg mb-2">CSS Styling & Layout Design</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          Pixel-perfect styles, modern layouts, animations, and UI components using advanced CSS.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="badge-skill">CSS</span>
+          <span class="badge-skill">Flex/Grid</span>
+        </div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card group p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1">
+        
+        <div class="flex items-center justify-center mb-5">
+          <div class="h-14 w-14 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+            <span class="text-purple-600 dark:text-purple-300 text-3xl">📱</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg mb-2">Bootstrap Responsive Design</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          Fast, responsive layouts using Bootstrap with clean utilities and proper grid systems.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="badge-skill">Bootstrap</span>
+          <span class="badge-skill">Responsive UI</span>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card group p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1">
+
+        <div class="flex items-center justify-center mb-5">
+          <div class="h-14 w-14 rounded-full bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center">
+            <span class="text-sky-600 dark:text-sky-300 text-3xl">⚡</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg mb-2">Tailwind UI Development</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          Highly customizable and scalable UI using Tailwind CSS with utility-first workflows.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="badge-skill">Tailwind</span>
+          <span class="badge-skill">Components</span>
+        </div>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="service-card group p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1">
+
+        <div class="flex items-center justify-center mb-5">
+          <div class="h-14 w-14 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center">
+            <span class="text-yellow-600 dark:text-yellow-300 text-3xl">🛠️</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg mb-2">Bug Fixing & UI Improvements</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          Solve layout issues, fix responsiveness, clean CSS code, and improve UI consistency.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="badge-skill">Debugging</span>
+          <span class="badge-skill">UI Fix</span>
+        </div>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="service-card group p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1">
+
+        <div class="flex items-center justify-center mb-5">
+          <div class="h-14 w-14 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
+            <span class="text-indigo-600 dark:text-indigo-300 text-3xl">🧩</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-lightfg dark:text-darkfg mb-2">Portfolio Website Development</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          Personal branding websites built with modern design, animations, and responsive layouts.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="badge-skill">HTML</span>
+          <span class="badge-skill">Tailwind</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-12 animate-fadeInUp delay-200">
+      <p class="text-gray-600 dark:text-gray-300 mb-3">Have any queries?</p>
+      <a href="#contact" class="text-blue-600 dark:text-blue-400 underline font-medium hover:opacity-80">
+        Let's chat
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+    <!-- Title -->
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+        Testimonials
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        What people say about working with me.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+          “Excellent work! Clean UI, responsive layout, and delivered faster than expected.”
+        </p>
+        <h4 class="text-lightfg dark:text-darkfg font-semibold">John Doe</h4>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">Entrepreneur</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+          “Amazing communication. He redesigned my site using Tailwind and it looks stunning.”
+        </p>
+        <h4 class="text-lightfg dark:text-darkfg font-semibold">Sarah Williams</h4>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">Small Business Owner</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 shadow-sm transition-transform hover:-translate-y-1">
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+          “Great front-end developer. Fast delivery and very easy to work with.”
+        </p>
+        <h4 class="text-lightfg dark:text-darkfg font-semibold">Michael Lee</h4>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">Startup Founder</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+  <div class="max-w-4xl mx-auto px-4 md:px-8">
+
+    <!-- Title -->
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="text-3xl md:text-4xl font-semibold text-lightfg dark:text-darkfg">
+        Frequently Asked Questions
+      </h2>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="space-y-8">
+
+      <!-- Q1 -->
+      <div>
+        <h3 class="text-lg font-semibold text-lightfg dark:text-darkfg mb-2">
+          Do you redesign existing websites?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Yes. I can modernize outdated websites using HTML, CSS, Bootstrap, or Tailwind with full responsiveness.
+        </p>
+      </div>
+
+      <!-- Q2 -->
+      <div>
+        <h3 class="text-lg font-semibold text-lightfg dark:text-darkfg mb-2">
+          How fast can you deliver a project?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Simple landing pages can be delivered in 24–48 hours. Multi-page websites take longer depending on content.
+        </p>
+      </div>
+
+      <!-- Q3 -->
+      <div>
+        <h3 class="text-lg font-semibold text-lightfg dark:text-darkfg mb-2">
+          What do you need to get started?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Basic content (text, images), reference websites, or a rough idea. I can help with structure if needed.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 md:py-28 bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+
+    <!-- Label -->
+    <h2 class="text-base font-medium text-blue-600 dark:text-blue-400 tracking-wide mb-2">
+      Let’s Connect
+    </h2>
+
+    <!-- Short Line -->
+    <p class="text-gray-600 dark:text-gray-300 text-lg mb-6">
+      I’m available for freelance work — feel free to reach out.
+    </p>
+
+    <!-- Email -->
+    <a href="mailto:suhaibmd268@gmail.com"
+       class="text-2xl md:text-3xl font-semibold text-lightfg dark:text-darkfg hover:text-blue-600 dark:hover:text-blue-400 transition">
+       suhaibmd268@gmail.com
+    </a>
+
+    <!-- Social Icons -->
+    <div class="flex items-center justify-center gap-8 mt-10">
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/916238872600" target="_blank"
+        class="text-gray-700 dark:text-gray-300 hover:text-green-500 transition transform hover:-translate-y-1 text-3xl">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/SuhaibNadakkavil" target="_blank"
+        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition transform hover:-translate-y-1 text-3xl">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/suhaib-nadakkavil/" target="_blank"
+        class="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition transform hover:-translate-y-1 text-3xl">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <!-- Upwork -->
+      <a href="https://www.upwork.com/freelancers/~012876e4fa1f5b379b" target="_blank"
+        class="text-gray-700 dark:text-gray-300 hover:text-green-500 transition transform hover:-translate-y-1 text-3xl">
+        <i class="fa-brands fa-upwork"></i>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w-full bg-lightbg dark:bg-darkbg border-t border-gray-200 dark:border-gray-800 py-6">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+    <p class="text-sm text-gray-600 dark:text-gray-300">
+      © <span id="year"></span> msn4u | All Rights Reserved
+    </p>
+  </div>
+</footer>
+
+  <!-- Back To Top Button -->
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 h-12 w-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300"
+    aria-label="Back to top">
+
+    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Project Modal -->
+  <div id="projectModal"
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4 z-[999]">
+
+    <div class="modal-box w-full max-w-2xl bg-white dark:bg-[#1a1a1a] rounded-xl shadow-xl p-6 
+              opacity-0 scale-95 transition-all duration-300
+              max-h-[80vh] overflow-y-auto relative">
+
+      <!-- Close Button -->
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-700 dark:text-gray-300 hover:text-red-500">
+        ✕
+      </button>
+
+      <!-- Modal Content -->
+      <div id="modalContent" class="space-y-6 text-lightfg dark:text-darkfg"></div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
