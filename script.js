@@ -457,7 +457,35 @@ const projectData = {
     live: "https://user-login-94ux.onrender.com/",
     code: "https://github.com/SuhaibNadakkavil/user-login"
   },
+
+    project16: {
+    title: "UI Kit",
+    description: `
+      <h3 class="text-xl font-semibold mb-2">Overview</h3>
+      <p>This project is a multi-page Tailwind CSS UI Component Library designed for modern freelance and client projects.
+      It includes reusable, production-ready components such as buttons, cards, navigation bars, 
+      forms, modals, hero sections, pricing tables, testimonials, portfolio layouts, and utility examples.
+      The goal is to provide a clean, consistent, and fast starting point for building landing pages, business websites, and portfolios.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-2">Features</h3>
+      <ul class="list-disc ml-5 space-y-1">
+        <li>Responsive multi-page UI Kit built with Tailwind CSS</li>
+        <li>Component categories: Buttons, Cards, Navigation, Forms, Modals, Hero Sections, Pricing, Testimonials, Portfolio, Utilities</li>
+        <li>Clean layout with consistent spacing, typography, and color system</li>
+        <li>Font Awesome icons integrated for richer UI elements</li>
+        <li>Ready to use in freelance projects or as a showcase in your portfolio</li>
+        <li>Deployed as a static site via GitHub Pages</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-6 mb-2">Tech Stack</h3>
+      <p>HTML, JAVASCRIPT, TAILWIND CSS</p>
+    `,
+    live: "https://ui-kit-msn4u.vercel.app/",
+    code: "https://github.com/SuhaibNadakkavil/ui-kit"
+  },
 };
+
+
 
 //---------------------------------------
 // PROJECT FILTER 
